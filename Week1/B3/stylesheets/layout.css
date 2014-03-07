@@ -16,6 +16,58 @@
 
 /* #Site Styles
 ================================================== */
+header{
+	width: 100%;
+}
+
+h1, p, h3{
+	color: #4C525E;
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+p, a{
+	font-size: 1em;
+}
+
+.container .nine .columns{
+	width: 65%;
+}
+
+aside{
+	float: right;
+	padding-top: 10px;
+	width: 35%
+}
+#side_links{
+	padding: 5px;
+	border: 1px solid #31353D;
+	width: 95%
+}
+
+#side_info{
+	margin-top: -390px;
+	float: right;
+}
+
+#side_info p{
+	clear: both;
+}
+
+footer{
+	clear: both;
+	margin-top: 15px;
+}
+
+footer a{
+	padding-bottom: 10px;
+}
 
 /* #Page Styles
 ================================================== */
@@ -27,16 +79,50 @@
 	@media only screen and (max-width: 959px) {}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#side_info{
+			float: left;
+			display: inline-block;
+		}
+
+		#side_links{
+			width: 65%;
+		}
+	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		#side_info{
+			float: left;
+			display: inline-block;
+		}
 
+		#side_links{
+			width: 100%;
+			float: left;
+		}
+	}
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#side_info{
+			display: inline-block;
+			float: left;
+			margin-top: -10px;	
+		}
 
+		#side_links{
+			width: 100%;
+			float: left;
+		}
+	}
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		#side_info{
+			display: inline-block;
+			float: left;
+			margin-top: -10px;	
+		}
+	}
 
 
 /* #Font-Face
