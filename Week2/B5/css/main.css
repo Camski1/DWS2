@@ -1,0 +1,31 @@
+
+
+.panel{
+	margin-top: 70px;
+}
+
+#ship, #flag, #crew{
+	background-repeat:repeat-y;
+	height: 213px;
+}
+
+#ship{
+	background-image: url(../img/ship.jpg);
+}
+
+#flag{
+	background-image: url(../img/flag.jpg);
+}
+
+#crew{
+	background-image: url(../img/crew.jpg);
+}
+
+h3, h3 a{
+	margin-bottom: -20px;
+	color: #8F0000;
+}
+
+#footer ul{
+	list-style-type: none;
+}
