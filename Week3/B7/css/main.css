@@ -1,0 +1,135 @@
+body{
+	font-size: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #E4FBED;
+	font-family: Helvetica;
+	font-size: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+header{
+	background-color: #1A3073;
+	height: 70px;
+	width: 100%;
+	padding-top: 5px;
+}
+
+header h1{
+	padding-left:10%;
+}
+
+header h1 a{
+	color: white;
+}
+
+header p{
+	color: white;
+	float: right;
+	z-index: 1;
+	margin-top: -45px;
+	margin-right: 10%;
+}
+
+header p a{
+	color: white;
+}
+
+nav{
+	position: fixed;
+	height: 20px;
+	width: 100%;
+	background-color:#1A3073;
+	border-top: 1px solid black;
+	z-index: 2;
+}
+
+nav ul{
+	margin-top: 1px;
+	padding-left:9.5%;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	color: #E4FBED;
+	padding: 1px 10px;
+}
+
+nav a:hover{
+	color: #1A3073;
+	background-color: #E4FBED;
+}
+
+#container{
+	position: relative;
+	width: 35%;
+	margin: 30px 30%;
+}
+
+form{
+	background-color: lightgreen;
+}
+
+label, input{
+	margin: 15px 0 10px 2%;
+}
+
+
+
+
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+
+	#container{
+		width: 60%;
+		margin: 40px 15%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+	nav{
+		height: 40px;
+	}
+
+	#container{
+		width: 60%;
+		margin: 40px 15%;
+	}
+
+}
+
+@media only screen and (max-width: 479px){
+
+	nav{
+		height: 40px;
+	}
+
+	#container{
+		width: 60%;
+		margin: 40px 15%;
+	}
+
+}
+
+
+
+
+
+
+
+
+

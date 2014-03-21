@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Form</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js-webshim/minified/extras/modernizr-custom.js"></script>
+		<script type="text/javascript" src="js-webshim/minified/polyfiller.js"></script>
+		<script>
+			//load all defined
+			$.webshims.polyfill();
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1><a href="#">CKNN</a></h1>
+			<p><a href="">Sign-In</a> | <a href="">Sign-Up</a></p>
+			
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">U.S.</a></li>
+				<li><a href="#">World</a></li>
+				<li><a href="#">Tech</a></li>
+				<li><a href="#">Health</a></li>
+				<li><a href="#">Politics</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="#">Entertainment</a></li>
+			</ul>
+		</nav>
+
+		<div id="container">
+			<h1>Sign-Up Today</h1>
+			<form>
+				<label for="firstname">First Name:</label>
+				<input id="firstname" type="text" name="firstname" placeholder="First name" required><br>
+
+				<label for="lastname">Last Name:</label>
+				<input id="lastname" type="text" name="lastname" placeholder="Lirst name" required><br>
+
+				<label for="password">Password:</label>
+				<input id="password" type="password" name="password" placeholder="Password" required><br>
+				<label for="re-password">Re-enter Password:</label>
+				<input id="re-password" type="password" name="re-password" placeholder="Re-enter password" required><br>
+
+				<input id="ma-sex" type="radio" name="sex">
+				<label for="ma-sex">Male</label>
+				<input id="fe-sex" type="radio" name="sex">
+				<label for="fe-sex">Female</label><br>
+
+				<label for="site-vis">Number of site visits per day.</label><br>
+				<label for="site-vis">1</label>
+				<input id="site-vis" type="range" name="points" min="1" max="10">
+				<label for="site-vis">10+</label><br>
+
+				<label for="continent">What Continent do you live on?</label><br>
+				<select id="continent" name="continent" type="text" list="continent">
+					<option>Asia</option>
+					<option>Africa</option>
+					<option>North America</option>
+					<option>South America</option>
+					<option>Antarctica</option>
+					<option>Europe</option>
+					<option>Australia</option>
+				</select><br>
+
+				<label for="date">Date of Birth?</label>
+				<input id="date" type="date" name="date"><br>
+
+				<input id="news" name="news" type='checkbox'>
+				<label for="news">Sign-up for news letter.</label><br>
+
+				<label for="twit">Describe yourself in 30 charicters or less.</label><br>
+				<input type="text" maxlength="30" id="twit" name="twit" onkeypress="return isNumberKey(event)"/><br>
+
+				<label for="coms">How do you like this site?</label><br>
+				<textarea id="coms" rows="7" cols="30"></textarea>
+
+				<br><input type="submit">
+
+
+
+			</form>
+
+
+		</div><!--container-->
+
+	</body>
+</html>
